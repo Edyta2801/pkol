@@ -1,0 +1,22 @@
+# ACF Custom Database Tables – By Hookturn ft. Phil Kurth
+
+### 1.0.5 – 2019-02-12
+- FIX: Adjusted for ACF changes that prevented the creation of table definitions on field group save
+
+### 1.0.4 – 2018-12-05
+- FIX: Fixed an issue with path normalization for Windows-based servers
+- FIX: Fixed a bug causing fatal errors when ACF JSON files were imported using ACF's 'Import Field Groups' metabox
+
+### 1.0.3
+- FIX: an issue where selecting the same post type across multiple OR conditions on a field group's location rules deactivated the table meta box
+
+### 1.0.2
+- FIX: an issue where leading zeros were being removed on save
+- FIX: changed required capability for plugin settings page to match other ACF sub pages
+- ADDED: filters that allow custom de/encoding of data being stored in custom tables
+- ADDED: optional module for serializing stored data instead of JSON encoding. Disabled by default.
+- ADDED: optional module for casting string based integers as integers before encoding. This is enabled by default and is the original functionality just moved to a module.
+
+### 1.0.1
+- FIX: Fixed an issue that was causing errors on multisite network dashboard on plugin activation.
+- FIX: Fixed an issue where table definition JSON files were causing 'table does not exist' notices before triggering the database migration process.
